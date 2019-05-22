@@ -16,8 +16,8 @@
 
 ```bash
 yarn install
-yarn run server
-yarn run start
+yarn run server # もしくは、docker-compose up --build
+yarn run start # 別コンソールで実施
 ```
 
-その後、マウスを操作すると(yarnコマンドを実行した)コンソールにマウス操作のログが出力されます
+その後、マウスを操作すると(`yarn run start`コマンドを実行した)コンソールにマウス操作のログが出力されます
