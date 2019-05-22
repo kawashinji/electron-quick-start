@@ -3,20 +3,37 @@
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
+  "engines": {
+    "node": "11.15.0",
+    "npm": "6.9.0",
+    "yarn": "1.16.0"
+  },
   "scripts": {
-    "start": "electron ."
+    "check": "node scripts/node-abi.js",
+    "start": "electron ./src/main.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.1",
+    "node-abi": "^2.8.0"
+  },
+  "iohook": {
+    "targets": [
+      "node-67",
+      "electron-70"
+    ],
+    "platforms": [
+      "win32",
+      "darwin"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  },
+  "dependencies": {
+    "iohook": "^0.4.5"
   }
 }
