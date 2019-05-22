@@ -1,39 +1,15 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "private": true,
   "engines": {
     "node": "11.15.0",
     "npm": "6.9.0",
     "yarn": "1.16.0"
   },
   "scripts": {
-    "check": "node scripts/node-abi.js",
-    "start": "electron ./src/main.js"
+    "check": "node scripts/node-abi.js"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "author": "GitHub",
-  "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.1",
     "node-abi": "^2.8.0"
-  },
-  "iohook": {
-    "targets": [
-      "node-67",
-      "electron-70"
-    ],
-    "platforms": [
-      "win32",
-      "darwin"
-    ],
-    "arches": [
-      "x64",
-      "ia32"
-    ]
-  },
-  "dependencies": {
-    "iohook": "^0.4.5"
   }
 }

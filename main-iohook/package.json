@@ -1,0 +1,35 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "engines": {
+    "node": "11.15.0",
+    "npm": "6.9.0",
+    "yarn": "1.16.0"
+  },
+  "scripts": {
+    "start": "electron ./src/main.js"
+  },
+  "devDependencies": {
+    "electron": "^5.0.1"
+  },
+  "iohook": {
+    "targets": [
+      "node-67",
+      "electron-70"
+    ],
+    "platforms": [
+      "win32",
+      "darwin"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  },
+  "dependencies": {
+    "electron-log": "^3.0.5",
+    "iohook": "^0.4.5"
+  }
+}
